@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Button from "./components/Button";
+import List from "./components/List";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Problem Solved</h1>
+      <h2>Products to help you in daily tasks</h2>
+      <Button color={"#000000"} text={"Vinicius"} textColor={"#ffffff"}/>
+      <Button color={"#645838"} text={"Thiago"}/>
+      <Button color={"#ff4638"} text={"Gabriel"}/>
+      <Button color={"#267500"} text={"Mylena"}/>
+      <Button color={"#ffffff"} text={"Caique"}/>
+      <List items={["Cake", "Mylena", "Tingao", "Bingo", "Vini"]}/>
     </div>
   );
 }
